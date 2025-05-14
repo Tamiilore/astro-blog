@@ -8,7 +8,7 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     env:
-      IMAGE_NAME: registry.digitalocean.com/YOUR_REGISTRY/astro-blog
+      IMAGE_NAME: registry.digitalocean.com/astro-blog-web
 
     steps:
       - name: Checkout repository

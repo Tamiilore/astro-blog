@@ -7,15 +7,14 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-
     env:
-      IMAGE_NAME: registry.digitalocean.com/astro-blog-web
+      IMAGE_NAME: registry.digitalocean.com/YOUR_REGISTRY/astro-blog
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0 
 
       - name: Set up Node.js
         uses: actions/setup-node@v3

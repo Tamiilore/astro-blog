@@ -15,7 +15,7 @@ COPY . .
 RUN npm run build
 
 # Stage 2: Serve with Nginx
-FROM nginx:alpine
+FROM nginx:1.28.0-alpine3.21-slim
 
 # Clean out default nginx content
 RUN rm -rf /usr/share/nginx/html/*
